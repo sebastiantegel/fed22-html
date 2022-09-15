@@ -4,11 +4,27 @@ header {
     border-radius: 10px;
 }
 
+header .navigation {
+    background-color: aqua;
+}
+
 .content {
     border: 1px dotted black;
     padding: 20px;
     margin: 10px;
     background-color: rgba(230, 230, 230, 0.5);
+}
+
+[class^="image"] {
+    
+}
+
+section > article:first-child {
+    background-color: palevioletred;
+}
+
+section:hover {
+    cursor: pointer;
 }
 
 #main-content {
