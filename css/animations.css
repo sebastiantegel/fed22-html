@@ -1,0 +1,83 @@
+.blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: background-color 2s linear;
+}
+
+.blue:hover {
+  background-color: yellow;
+}
+
+.hidden {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  opacity: 1;
+  transition: opacity 1500ms;
+}
+
+.hidden:hover {
+  opacity: 0;
+}
+
+nav {
+  padding: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+ul li {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: border 0.2s;
+}
+
+ul li:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+@keyframes goaround1 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(200px, 0);
+  }
+}
+
+@keyframes goaround2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(200px, 0);
+  }
+
+  50% {
+    transform: translate(200px, 200px);
+  }
+
+  75% {
+    transform: translate(0, 200px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.moving {
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  opacity: 0.5;
+  animation: goaround2 4s infinite;
+}

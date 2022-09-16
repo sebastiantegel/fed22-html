@@ -1,59 +1,114 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 .container {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .wide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .container > * {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container aside {
-    width: 100%;
-    background-color: greenyellow;
+  width: 100%;
+  background-color: greenyellow;
 }
 
 .container main {
-    width: 100%;
-    background-color: red;
+  width: 100%;
+  background-color: red;
 }
 
 .container section {
-    width: 100%;
-    background-color: blue;
+  width: 100%;
+  background-color: blue;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.heart {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(45deg);
+  animation: heart 2s infinite;
+}
+
+.heart::before,
+.heart::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  left: -25px;
+}
+
+.heart::after {
+  top: -25px;
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  5% {
+    transform: rotate(45deg) scale(0.9);
+  }
+  10% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.8);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
+  .container {
+    flex-direction: row;
+  }
 
-    .container aside {
-        width: 20%;
-    }
-    
-    .container main {
-        width: 60%;
-    }
-    
-    .container section {
-        width: 20%;
-    }
+  .container aside {
+    width: 20%;
+  }
 
-    .wide {
-        display: block;
-        width: 100%;
-        height:400px;
-        background-image: url('./../assets/nature-wallpapers-38.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  .container main {
+    width: 60%;
+  }
+
+  .container section {
+    width: 20%;
+  }
+
+  .wide {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url("./../assets/nature-wallpapers-38.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
