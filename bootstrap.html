@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap!</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container-fluid vh-100">
+      <section class="row align-items-center text-center">
+        <!-- 12 kolumner att använda -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <section class="border gx-0 gx-lg-4">
+            <i class="bi bi-alarm"></i>
+          </section>
+        </article>
+        <article class="col-12 col-md-6 col-lg-4">
+          <section class="border gx-0 gx-lg-4">2</section>
+        </article>
+        <article class="col-12 col-lg-4">
+          <section class="border gx-0 gx-lg-4">3</section>
+        </article>
+      </section>
+
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Accordion Item #1
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Accordion Item #2
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Öppna modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Är du säker?</h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Lorem ipsum! Bootstrap FTW!!</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Nej
+              </button>
+              <button type="button" class="btn btn-primary">Ja</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

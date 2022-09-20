@@ -1,0 +1,16 @@
+main {
+  background-color: darkkhaki;
+}
+
+.row {
+  height: 50vh;
+}
+
+section > article > section {
+  background-color: mediumvioletred;
+}
+
+i {
+  color: white;
+  font-size: 32pt;
+}
