@@ -1,0 +1,5 @@
+@use "mixins";
+
+button {
+  @include mixins.button;
+}

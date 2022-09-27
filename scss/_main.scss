@@ -1,0 +1,25 @@
+@use "variables" as var;
+@use "mixins";
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var.$primary;
+
+  section.content {
+    color: var.$content-color;
+  }
+  section.content-xl {
+    color: var.$content-color;
+  }
+  section.content-sm {
+    color: var.$content-color;
+  }
+  section.content-lg {
+    color: var.$content-color;
+  }
+}
