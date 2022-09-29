@@ -1,0 +1,26 @@
+@use "mixins";
+@use "buttons";
+
+.container {
+  @include mixins.box(aqua, 150px);
+
+  @include mixins.tablet {
+    background-color: purple;
+  }
+
+  @include mixins.desktop {
+    background-color: yellowgreen;
+  }
+}
+
+.container--small {
+  @include mixins.box(blue);
+
+  @include mixins.for-size(tablet) {
+    background-color: pink;
+  }
+
+  @include mixins.for-size(desktop) {
+    background-color: orange;
+  }
+}

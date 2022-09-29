@@ -1,0 +1,60 @@
+/* Breakpoints */
+.btn, .btn--exception, .btn--big {
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 1em;
+  padding: 1em;
+  background-color: aquamarine;
+}
+.btn:hover, .btn--exception:hover, .btn--big:hover {
+  cursor: pointer;
+}
+.btn:active, .btn--exception:active, .btn--big:active {
+  opacity: 0.5;
+  border-width: 2px;
+}
+
+.btn--big {
+  padding: 2em;
+  font-size: 1.5em;
+}
+
+.btn--exception {
+  background-color: red;
+  font-size: 1.3em;
+  padding: 1.3em;
+}
+
+.container {
+  width: 150px;
+  height: 75px;
+  background-color: aqua;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: purple;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    background-color: yellowgreen;
+  }
+}
+
+.container--small {
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+}
+@media screen and (min-width: 768px) {
+  .container--small {
+    background-color: pink;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--small {
+    background-color: orange;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
