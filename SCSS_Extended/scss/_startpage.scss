@@ -2,7 +2,7 @@
 @use "buttons";
 
 .container {
-  @include mixins.box(aqua, 150px);
+  @include mixins.box(aqua, 100%);
 
   @include mixins.tablet {
     background-color: purple;
@@ -10,6 +10,15 @@
 
   @include mixins.desktop {
     background-color: yellowgreen;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+
+    &--important {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
   }
 }
 

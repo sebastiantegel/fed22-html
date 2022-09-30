@@ -1,3 +1,12 @@
+html {
+  font-family: "Times new roman", Arial, serif;
+  font-size: 12pt;
+}
+
+body {
+  margin: 0;
+}
+
 /* Breakpoints */
 .btn, .btn--exception, .btn--big {
   border: 1px solid grey;
@@ -26,8 +35,8 @@
 }
 
 .container {
-  width: 150px;
-  height: 75px;
+  width: 100%;
+  height: 50%;
   background-color: aqua;
 }
 @media screen and (min-width: 768px) {
@@ -39,6 +48,13 @@
   .container {
     background-color: yellowgreen;
   }
+}
+.container__text {
+  font-size: 1.2rem;
+}
+.container__text--important {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .container--small {
