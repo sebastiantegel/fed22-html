@@ -12,10 +12,16 @@
     background-color: yellowgreen;
   }
 
+  // &
+  //   _________
   &__text {
+    // .container__text
     font-size: 1.2rem;
 
+    // &
+    // _______________
     &--important {
+      // .container__text--important
       font-size: 1.5rem;
       font-style: italic;
     }
