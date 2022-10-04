@@ -1,0 +1,41 @@
+@use "mixins";
+@use "buttons";
+
+.container {
+  @include mixins.box(aqua, 100%);
+
+  @include mixins.tablet {
+    background-color: purple;
+  }
+
+  @include mixins.desktop {
+    background-color: yellowgreen;
+  }
+
+  // &
+  //   _________
+  &__text {
+    // .container__text
+    font-size: 1.2rem;
+
+    // &
+    // _______________
+    &--important {
+      // .container__text--important
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+  }
+}
+
+.container--small {
+  @include mixins.box(blue);
+
+  @include mixins.for-size(tablet) {
+    background-color: pink;
+  }
+
+  @include mixins.for-size(desktop) {
+    background-color: orange;
+  }
+}
