@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 200px 150px 200px;
+
+  & > div {
+    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(even) {
+      background-color: purple;
+    }
+  }
+
+  & .first {
+    // grid-row: 1 / 3;
+    // grid-column: 1 / 3;
+
+    grid-area: 2 / 2 / 4 / 4;
+  }
+
+  & .five {
+    grid-row: 2 / 4;
+  }
+
+  & .six {
+    grid-column: 1 / span 3;
+  }
+}
